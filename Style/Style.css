@@ -397,7 +397,7 @@ width: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     padding: 20px;
     border-radius: 15px;
-    background-color: #eeee;
+    background-color: #b6ebbaee;
 }
 .zig-zag-card-rev{
     display: flex;
@@ -413,6 +413,7 @@ width: 100%;
 }
 .zig-zag-imge{
     width: 30%;
+
 }
 .zig-zag-cap{
     max-width: 65%;
@@ -449,3 +450,171 @@ width: 100%;
 .car-btn a {
     color: #fff;
 }
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.feed-form{
+    width: 900px;  
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #cecce9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inline-label {
+    display: block;
+    margin-right: 10px;
+}
+
+select, textarea, input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #090909;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea#comments {
+    margin-bottom: 20px; 
+}
+
+.red-text {
+    color: red;
+    font-size: 25px;
+}
+label[for="serviceType"] {
+    margin-top: 1em;
+}
+
+.preferences label {
+    display: block;
+    margin-bottom: 10px;
+}
+.preferences {
+    margin-top: 1em; 
+}
+
+.submit-btn {
+    background-color: blue; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    display: block; 
+    margin: 0 auto;
+}
+
+.discoveryMethod ,.highlighted-text {
+    font-size: 15px;
+    font-weight: bold;  
+    color: #000;  
+}
+
+
+
+.video-container {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(130, 249, 148, 0.1);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+thead th {
+    background-color: #004400;  
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #e9f7e9;  
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #ffffff;  
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+td {
+    text-align: center;         
+    vertical-align: middle;     
+    border: 1px solid black;    
+    height: 100px;             
+}
+.printbtn{
+    padding: 5px 10px;
+    background-color: #5dd39e;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+}
+.printcta{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 15px;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+  }
+  @media print {
+    html, body {
+      width: 210mm;
+      height: 297mm;
+    }
+    /* ... the rest of the rules ... */
+    footer{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .printbtn{
+        display: none;
+    }
+    .event-sec{
+        background-color: #000 !important;
+    }
+  }
